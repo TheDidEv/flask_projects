@@ -20,6 +20,8 @@ def hendle_params():
     # return str(request.args)
     # greeting = request.args.get('greeting')
     
+    
+    # example /hadle_url_params/name=Bob&greeting=someGreeting
     if 'greeting' in request.args.keys() and 'name' in request.args.keys():
         greeting = request.args['greeting'] # required field for input
         name = request.args.get('name')
