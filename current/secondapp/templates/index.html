@@ -19,8 +19,16 @@
 
 
 
-    <h1>File upload and convert</h1>
+    <h1>File upload and convert to CSV</h1>
     <form method="POST" action="{{ url_for('convert_csv') }}" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".xlsx, .xls" required="required"/>
+        <input type="submit" value="Conver to .CSV file"/>
+    </form>
+
+
+
+    <h1>Convert to CSV Two</h1>
+    <form method="POST" action="{{ url_for('convert_csv_two') }}" enctype="multipart/form-data">
         <input type="file" name="file" accept=".xlsx, .xls" required="required"/>
         <input type="submit" value="Conver to .CSV file"/>
     </form>
